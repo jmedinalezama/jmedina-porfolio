@@ -1,0 +1,80 @@
+.header {
+  min-height: calc(100vh - 4rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: .5rem 1rem;
+}
+
+.header img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.header .title {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+
+  font-size: 1.7rem;
+  color: rgb(77, 184, 255)
+}
+
+.header .description {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+  color: #ddd;
+}
+
+.header .description.contact {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.header .description .red {
+  color: rgb(255, 101, 101);
+  font-style: italic;
+}
+
+.header .description .red-alpha {
+  color: rgb(255, 225, 225);
+}
+
+.header .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.header .social-media .link {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  border: thin solid #09f;
+
+  transition: scale 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.header .social-media .link:hover {
+  scale: 1.1;
+  box-shadow: 0 0 5px 1px #09f;
+}
+
+@media (width > 450px) {
+  .header .title {
+    font-size: 2rem;
+  } 
+}
+
+@media (width > 750px) {
+  .header {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}

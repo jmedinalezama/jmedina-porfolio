@@ -1,0 +1,59 @@
+.thecnology-item {
+  border-radius: 8px;
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 4px 4px;
+  margin: 0 10px;
+  
+  background-color: #000000;
+
+  transition: scale 200ms ease-in;
+
+  & div {
+    width: 48px;
+    height: 48px;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & p {
+    font-weight: 500;
+  }
+}
+
+.thecnology-item:hover {
+  scale: 1.05;
+}
+
+/* .thecnology-item::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: -2px;
+  background-color: rgba(187, 187, 187, 0.1);
+  backdrop-filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgba(187, 187, 187, 0.1);
+  border-radius: 8px;
+
+  transition: 
+    background-color 200ms ease-in-out, 
+    backdrop-filter 200ms ease-in-out,
+    border 200ms ease;
+}
+ */
+/* .thecnology-item:hover::after {
+  background-color: none;
+  backdrop-filter: grayscale(0%);
+  border: 3px solid transparent;
+} */

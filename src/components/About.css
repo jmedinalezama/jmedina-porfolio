@@ -1,0 +1,79 @@
+.section-about {
+  margin: 0 auto;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  & .about-title {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  & article {
+    padding: 0px 10px;
+
+    & h4 {
+      font-size: 1.1rem;
+      margin: 0;
+      margin-top: 10px;
+      color: #eeeeee;
+    }
+
+    & h6 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: .8rem;
+      color: rgb(93, 190, 255);
+    }
+
+    & p {
+      text-wrap: pretty;
+      margin: 10px 0px;
+      line-height: 1.5;
+      font-weight: 400;
+      font-size: .9rem;
+
+      & .bold {
+        font-weight: 500;
+        color: rgb(255, 101, 101);
+      }
+    }
+  }
+
+  & .cv {
+    padding: 0 9px;
+    align-self: flex-start;
+
+    display: flex;
+    column-gap: 10px;
+
+    & .link {
+      background-color: transparent;
+      color: #fff;
+      border-radius: 6px;
+      border: thin solid #09f;
+
+      transition: scale 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    }
+
+    & .link:hover {
+        scale: 1.01;
+        box-shadow: 0 0 5px 1px #09f;
+    }
+  }
+}
+
+@media (width > 800px) {
+  .section-about{
+    & article {
+      & p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

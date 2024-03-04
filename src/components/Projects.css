@@ -1,0 +1,24 @@
+.projects-container {
+  padding: 0 10px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container .projects-title {
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.projects-container div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 1rem;
+}

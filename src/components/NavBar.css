@@ -1,0 +1,135 @@
+
+.open-close-menu {
+  display: block;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+
+  padding: 8px 10px;
+  border: thin solid #09f;
+  border-radius: 6px;
+
+  color: #fff;
+  font-weight: 800;
+  background-color: #09f;
+
+  cursor: pointer;
+
+  transition: box-shadow 100ms ease-in;
+
+  &:hover {
+    box-shadow: 0 0 6px 3px #09F;
+    transition: box-shadow 250ms ease-in;
+  }
+}
+
+.navbar-container {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 4rem;
+  margin: 0 auto;
+
+  animation: bg-change-scroll linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+
+  & .logo {
+    width: 100%;
+    height: inherit;
+
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: inherit;
+
+      & svg {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+
+  & .navbar {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 998;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    row-gap: 18px;
+
+    opacity: 0;
+    pointer-events: none;
+
+    background-color: #09F;
+    border-radius: 10px;
+    padding: 2px 4px;
+
+    transform: translateY(30px);
+    transition: transform 200ms ease-in-out, opacity 250ms ease;
+  }
+
+  & .navbar.is-open {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@media (width > 800px) {
+  .open-close-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    & .navbar {
+      position: static;
+
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      column-gap: 5px;
+
+      opacity: 1;
+      pointer-events: auto;
+
+      background-color: transparent;
+      padding: 0 4px;
+
+      transform: translateY(0px);
+      transition: none;
+    }
+  }
+}
+
+@media (width > 1000px) {
+  .navbar-container {
+    & .navbar {
+      column-gap: 15px;
+    }
+  }
+}
+
+@keyframes bg-change-scroll {
+  to {
+    background-color: #01002B;
+    height: 3rem;
+    box-shadow: 0px 1px 15px 1px #01002B;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+

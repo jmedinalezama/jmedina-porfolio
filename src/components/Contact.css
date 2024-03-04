@@ -1,0 +1,29 @@
+.section-contact {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    & .link {
+      transition: stroke 200ms ease-in;
+    }
+    
+    & .link:hover svg {
+      stroke: rgb(99, 192, 255);
+    }
+  }
+}

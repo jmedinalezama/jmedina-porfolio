@@ -1,0 +1,8 @@
+.link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  text-decoration: none;
+}

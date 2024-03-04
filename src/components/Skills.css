@@ -1,0 +1,58 @@
+.section-skills {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .skills-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  & .services {
+    width: 100%;
+
+    & .service-title {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      color: rgb(77, 184, 255)
+    }
+
+    & .service-grid {
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: 1.5rem;
+    }
+  }
+
+  & .technologies {
+    width: 100%;
+
+    & .technology-title {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 15x;
+    
+      color: rgb(77, 184, 255)
+    }
+
+    & .technology-grid {
+      margin: 0 auto;
+      width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+      gap: .5rem;
+    }
+  }
+}
