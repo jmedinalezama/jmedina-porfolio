@@ -8,7 +8,7 @@ export function About () {
 
       <article>
         <h4>Jerson Medina Lezama</h4>
-        <h6>Estudiante de informática 👨‍💻</h6>
+        <h6>Diseño y Desarrollo de Software ❤️👨‍💻</h6>
 
         <p>Actualmente me encuentro cursando la carrera de <span className='bold'>computación e informática</span>. Soy una persona <span className='bold'>autodidacta</span>, lo cuál me ha permitido seguir siempre mejorando.</p>
 

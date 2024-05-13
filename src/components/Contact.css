@@ -10,6 +10,7 @@
 
   & h2 {
     text-align: center;
+    color: #fff;
   }
 
   & div {
@@ -20,6 +21,10 @@
 
     & .link {
       transition: stroke 200ms ease-in;
+    }
+
+    & .link svg {
+        stroke: #ddd;
     }
     
     & .link:hover svg {

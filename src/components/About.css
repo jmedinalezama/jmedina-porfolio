@@ -12,6 +12,7 @@
   & .about-title {
     text-align: center;
     margin-bottom: 0px;
+    color: #fff;
   }
 
   & article {
@@ -37,6 +38,7 @@
       line-height: 1.5;
       font-weight: 400;
       font-size: .9rem;
+      color: #fff;
 
       & .bold {
         font-weight: 500;

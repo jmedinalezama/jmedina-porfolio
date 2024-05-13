@@ -22,5 +22,6 @@
   & p {
     font-weight: 400;
     text-wrap: pretty;
+    color: #fff;
   }
 }
