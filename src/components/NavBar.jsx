@@ -27,7 +27,7 @@ export function NavBar () {
 
         <nav className='navbar' ref={navMenu}>
           <NavItem href='#' onClick={handleClick}>
-            <span>Home</span>
+            <span>Inicio</span>
             <HomeIcon />
           </NavItem>
           <NavItem href='#projects' onClick={handleClick}>

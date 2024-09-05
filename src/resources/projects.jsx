@@ -10,7 +10,10 @@ export const PROJECTS = [
       { icon: KotlinIcon, name: 'Kotlin', color: '#E47959' },
       { icon: FigmaIcon, name: 'Figma', color: '#A259FF' }
     ],
-    links: []
+    links: [{
+      icon: GitHubIcon,
+      link: 'https://github.com/jmedinalezama/farmacovigilancia-app'
+    }]
   },
   {
     title: 'Sistema de ventas',
@@ -20,7 +23,10 @@ export const PROJECTS = [
       { icon: JavaIcon, name: 'Java', color: '#0074BD' },
       { icon: MySqlIcon, name: 'MySQL', color: '#00618B' }
     ],
-    links: []
+    links: [{
+      icon: GitHubIcon,
+      link: 'https://github.com/jmedinalezama/tech-world-app'
+    }]
   },
   {
     title: 'Buscador de libros - SearchBookApp',
@@ -33,8 +39,10 @@ export const PROJECTS = [
       { icon: ReactIcon, name: 'ReactJS', color: '#61DBFB' },
       { icon: ReactRouterIcon, name: 'React Router', color: '#D10014' }
     ],
-    links: [
-    ]
+    links: [{
+      icon: GitHubIcon,
+      link: 'https://github.com/jmedinalezama/search-book-app'
+    }]
   },
   {
     title: 'Software academia de fútbol',
@@ -43,7 +51,10 @@ export const PROJECTS = [
     tags: [
       { icon: JavaIcon, name: 'Java', color: '#0074BD' }
     ],
-    links: []
+    links: [{
+      icon: GitHubIcon,
+      link: 'https://github.com/jmedinalezama/bright-student-app'
+    }]
   },
   {
     title: 'Generador de gradiente para textos',
@@ -55,11 +66,11 @@ export const PROJECTS = [
       { icon: JavaScriptIcon, name: 'JavaScript', color: '#F7DF1E' }
     ],
     links: [
-      /* {
-        icon: GitHubIcon,
-        link: 'https://jmedinalezama.github.io/portafolio-cv/'
-      },
       {
+        icon: GitHubIcon,
+        link: 'https://github.com/jmedinalezama/generator-gradient-text'
+      }
+      /* {
         icon: YoutubeIcon,
         link: 'https://www.youtube.com/'
       },

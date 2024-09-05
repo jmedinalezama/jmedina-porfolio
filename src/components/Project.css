@@ -3,6 +3,9 @@
 
   border: thin solid #09f;
   border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .project .project-title {
@@ -55,6 +58,7 @@
 
 .project .project-img {
   overflow: hidden;
+  flex-grow: 1;
 }
 .project .project-img img{
   border-radius: 6px;
@@ -62,13 +66,21 @@
 
 .project .project-footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   
   width: 100%;
   margin: 10px 0;
 }
 
-.project .project-footer a:hover svg {
-  stroke: rgb(75, 183, 255);
+.project .project-footer span a {
+  color: #ddd;
 }
+
+.project .project-footer span:hover a {
+  color: rgb(75, 183, 255);
+}
+
+/* .project .project-footer a:hover svg {
+  stroke: rgb(75, 183, 255);
+} */

@@ -1,4 +1,5 @@
 import { Badge } from './Badge'
+import { Link } from './Link'
 import './Project.css'
 
 export function Project ({ project }) {
@@ -35,7 +36,10 @@ export function Project ({ project }) {
         {
           links.map((link, index) => (
             <Badge key={index}>
-              <a href={link.link}> <link.icon /></a>
+              <Link href={link.link}>
+                <link.icon />
+                Ver repositorio
+              </Link>
             </Badge>))
         }
       </footer>

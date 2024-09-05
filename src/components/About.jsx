@@ -10,11 +10,11 @@ export function About () {
         <h4>Jerson Medina Lezama</h4>
         <h6>Diseño y Desarrollo de Software ❤️👨‍💻</h6>
 
-        <p>Actualmente me encuentro cursando la carrera de <span className='bold'>computación e informática</span>. Soy una persona <span className='bold'>autodidacta</span>, lo cuál me ha permitido seguir siempre mejorando.</p>
+        <p>Técnico en <span className='bold'>computación e informática</span>, cuento con una sólida base teórica y práctica en el campo. Soy una persona <span className='bold'>autodidacta</span>, lo cuál me ha permitido mantenerme en constante evolución y mejora en mi área de especialización.</p>
 
-        <p>A lo largo de la carrera he realizado diferentes proyectos dónde apliqué las habilidades y conocimientos adquiridos. Disfruto llevar a cabo el <span className='bold'>diseño</span>, la <span className='bold'>maquetación</span> e <span className='bold'>interacción de interfaces gráficas</span> utilizando las tecnologías modernas.</p>
+        <p>A lo largo de mi carrera he trabajado en una variedad de proyectos que me han permitido aplicar y mejorar mis habilidades y conocimientos. Me apasiona llevar a cabo el <span className='bold'>diseño</span>, la <span className='bold'>maquetación</span> e <span className='bold'>interacción de interfaces gráficas</span> utilizando tecnologías modernas que se adapten a cada negocio.</p>
 
-        <p>Me gusta el <span className='bold'>Back-end</span> pero también hago <span className='bold'>Front-end</span>. </p>
+        <p>Aunque me gusta más el desarrollo <span className='bold'>Back-end</span> también cuento con experiencia en <span className='bold'>Front-end</span>. Esta combinación de habilidades me permite abordar proyectos de manera integral y ofrecer soluciones completas y efectivas. </p>
       </article>
 
       <div className='cv'>
